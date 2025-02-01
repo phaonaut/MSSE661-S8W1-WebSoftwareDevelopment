@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Build Fluid Layout</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="content">
+                <p>Account Sign Up</p> 
+                <form class="login" id="signup" action="POST">
+                    <label for="username">
+                        Username:
+                        <input type="text" name="username" id="username">
+                    </label>
+                    <label for="password">
+                        Password:
+                        <input type="password" name="password" id="password">
+                    </label>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+
+            <div class="calltoaction">
+                <div>New Features!</div>
+                <div>Fastest Ever!</div>
+                <div>Best prices!</div>
+                <div>Sign up now!</div>
+            </div>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
+    <script src="./src/app.js"></script>
+</html>

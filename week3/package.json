@@ -1,0 +1,14 @@
+{
+  "name": "week3",
+  "version": "1.0.0",
+  "description": "Website for MSSE661 class.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodney Gordon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
