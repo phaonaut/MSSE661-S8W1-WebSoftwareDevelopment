@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Auth</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div class="content">
+            <p>Login</p> 
+            <form novalidate>
+                <label for="username">
+                    Username:
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </label>
+                <label for="password">
+                    Password:
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </label>
+                <button onclick="doLogin(event)">Sign In</button>
+                <a href="/register.html">Register</a>
+            </form>
+        </div>
+    </body>
+    <script src="./src/api.config.js"></script>
+    <script src="./src/simple-storage.js"></script>
+    <script src="./src/service-helpers.js"></script>
+    <script src="./src/auth-service.js"></script>
+    <script src="./src/tasks-service.js"></script>
+    <script src="./src/route-guard.js"></script>
+    <script src="./src/build-tasks-list.js"></script>
+    <script src="./src/app.js"></script>
+
+</html>

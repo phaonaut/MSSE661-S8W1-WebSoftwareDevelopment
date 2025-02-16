@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                    <div>
+                        <!-- <a id="login" href="/login.html">Login</a> -->
+                        <a id="logout" href="" onclick="doLogout(event)">Logout</a>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="content">
+                <h1>My To-Do List</h1>
+                <div id="tasks">
+                    <div>Loading...</div>
+                </div>
+            </div>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
+    <!-- <script src="./src/scripts.js"></script> -->
+    <script src="./src/api.config.js"></script>
+    <script src="./src/simple-storage.js"></script>
+    <script src="./src/service-helpers.js"></script>
+    <script src="./src/auth-service.js"></script>
+    <script src="./src/tasks-service.js"></script>
+    <script src="./src/route-guard.js"></script>
+    <script src="./src/build-tasks-list.js"></script>
+    <script src="./src/app.js"></script>
+</html>
