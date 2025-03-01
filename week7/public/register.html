@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Auth</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="content">
+                <p>Login</p> 
+                <form novalidate>
+                    <label for="username">
+                        Username:
+                        <input type="text" name="username" id="username" placeholder="Choose a username">
+                    </label>
+                    <label for="email">
+                        Username:
+                        <input type="email" name="email" id="email" placeholder="example@email.com">
+                    </label>
+                    <label for="password">
+                        Password:
+                        <input type="password" name="password" id="password" placeholder="At least 8 characters">
+                    </label>
+                    <button onclick="doRegister(event)">Sign Up</button>
+                    <a href="/register.html">Register</a>
+                </form>
+            </div>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
+    <script src="./lib/service-helpers.js"></script>
+    <script src="./lib/auth-service.js"></script>
+    <script src="./lib/app.js"></script>
+</html>

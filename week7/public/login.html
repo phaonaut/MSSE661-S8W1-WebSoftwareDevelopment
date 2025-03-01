@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Auth</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="/#"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Login</h2>
+                    <form novalidate>
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="doLogin(event)">Sign In</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2>Sign Up</h2>
+                    <form novalidate>
+                        <div class="form-group">
+                            <label for="new-username">Username:</label>
+                            <input type="text" class="form-control" name="new-username" id="new-username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="new-password">Password:</label>
+                            <input type="password" class="form-control" name="new-password" id="new-password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="doSignUp(event)">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./lib/api.config.js"></script>
+    <script src="./lib/simple-storage.js"></script>
+    <script src="./lib/service-helpers.js"></script>
+    <script src="./lib/auth-service.js"></script>
+    <script src="./todo/todo-api.service.js"></script>
+    <!-- <script src="./lib/route-guard.js"></script> -->
+    <script src="./lib/build-tasks-list.js"></script>
+    <script src="./lib/auth.js"></script>
+
+</html>
