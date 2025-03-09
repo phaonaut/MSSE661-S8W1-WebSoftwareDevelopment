@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Settings</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="/#"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/settings.html">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="logout" href="" onclick="doLogout(event)">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Update Settings</h2>
+                    <p>Update your settings here. A user can update their password by entering their current password and then entering their new password.</p>
+                    <form novalidate>
+                        <div class="form-group">
+                            <label for="currentPassword">Current Password:</label>
+                            <input type="password" class="form-control" name="currentPassword" id="currentPassword" placeholder="Current Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">New Password:</label>
+                            <input type="password" class="form-control" name="newPassword" id="newPassword" placeholder="New Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="newPasswordRenter">New Password:</label>
+                            <input type="password" class="form-control" name="newPasswordRenter" id="newPasswordRenter" placeholder="Renter New Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="doUpdatePassword(event)">Update Password</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../lib/api.config.js"></script>
+    <script src="../lib/simple-storage.js"></script>
+    <script src="../lib/service-helpers.js"></script>
+    <script src="../lib/auth-service.js"></script>
+    <script src="../lib/auth.js"></script>
+
+</html>
